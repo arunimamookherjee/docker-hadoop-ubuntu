@@ -89,6 +89,7 @@ RUN service ssh start && $HADOOP_PREFIX/etc/hadoop/hadoop-env.sh && $HADOOP_PREF
 RUN apt-get update
 RUN apt-get install python
 RUN apt install python-pip
+RUN pip install device-detector
 
 CMD ["/etc/bootstrap.sh", "-d"]
 
